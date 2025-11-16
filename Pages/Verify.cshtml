@@ -1,0 +1,13 @@
+@page
+@model VerifyModel
+
+@{
+    ViewData["Title"] = "Human Verification";
+}
+
+<h1>Human Check!</h1>
+
+<form method="post">
+    <div class="cf-turnstile" data-sitekey="@Model.TurnstileSiteKey"></div>
+    <button type="submit" class="btn btn-primary mt-3">Continue</button> 
+</form>
